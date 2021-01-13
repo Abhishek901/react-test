@@ -37,7 +37,7 @@ export default class Deshboard extends Component {
   render() {
     const main_dashboard = (
       <div>
-        <Header />
+        {/* <Header /> */}
         <div id="wrapper">
           <div id="content-wrapper" className="d-flex flex-column">
             <div id="content">

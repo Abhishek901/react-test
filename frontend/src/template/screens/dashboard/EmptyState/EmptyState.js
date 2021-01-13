@@ -58,6 +58,7 @@ class EmptyState extends Component {
         <div>
           <Row>
             {this.props.bussiness.map((bussiness) => {
+             
               return (
                 <BussinessCards
                   key={bussiness._id}

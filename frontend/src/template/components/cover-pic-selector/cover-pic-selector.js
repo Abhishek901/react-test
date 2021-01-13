@@ -125,6 +125,22 @@ export default class CoverPicSelector extends Component {
     return (
       <div className="row">
         <div className="col-xl-12 offset-xl-12 col-lg-12 offset-lg-12">
+
+        <CoverEditor
+                src="https://image.shutterstock.com/z/stock-photo-horizontal-photo-happy-family-with-little-kids-watching-funny-video-on-phone-sitting-on-couch-enjoy-1296270142.jpg"
+                x={0}
+                y={0}
+              ></CoverEditor>
+
+
+
+
+
+
+
+
+
+
           {/* <Stage width={400} height={500}>
             <Layer>
               <CoverEditor

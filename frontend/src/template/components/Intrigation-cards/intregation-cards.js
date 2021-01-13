@@ -13,19 +13,17 @@ class IntregationCards extends Component {
       isLoading: true,
       bussinessReviews: {
         name: "",
-        url:
-          "https://www.zomato.com/moradabad/pizza-unique-1-moradabad-locality?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        url:"",
         location: {
-          address:
-            "Peeli Kothi, Civil Lines, Moradabad Tehsil, Moradabad Locality, Moradabad",
-          locality: "Moradabad Locality",
-          city: "Moradabad",
+          address:"",
+          locality: "",
+          city: "",
           city_id: 11393,
-          latitude: "28.8458102111",
-          longitude: "78.7650334463",
+          latitude: "",
+          longitude: "",
           zipcode: "",
           country_id: 1,
-          locality_verbose: "Moradabad Locality, Moradabad",
+          locality_verbose: "",
         },
         cuisines: "",
         average_cost_for_two: 0,
@@ -53,14 +51,16 @@ class IntregationCards extends Component {
     const dataId = event.target.value;
     // const currentTime = new Date().getMilliseconds();
     // console.log(typeof new Date().getMilliseconds);
+    debugger;
     const filterBussiness = this.props.bussiness.filter((data) => {
+      debugger;
       console.log(data._id);
       return data._id === dataId ? true : false;
     });
     const dataSource = this.props.name.toLowerCase();
     switch (dataSource) {
       case "zomato":
-        // debugger;
+         debugger;
         if (filterBussiness.length > 0)
           this.props.loadBussinessReview(filterBussiness[0]);
         break;

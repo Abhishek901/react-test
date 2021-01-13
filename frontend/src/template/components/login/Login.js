@@ -239,9 +239,9 @@ class Login extends Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-6 user-info-bg">
-              <div className="login-logo">
+              {/* <div className="login-logo">
                 <img src="../../../images/logo.png" />
-              </div>
+              </div> */}
             </div>
             <div className="col-md-6 user-info-details">
               <div className="signup-wrap">
